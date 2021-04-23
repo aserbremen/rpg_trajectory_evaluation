@@ -105,7 +105,7 @@ class Trajectory:
             print(Fore.RED+"Loading data failed.")
             return
 
-        self.boxplot_pcts = [0.2, 0.4, 0.6, 0.8, 1.0]#preset_boxplot_percentages
+        self.boxplot_pcts = [0.2, 0.4, 0.6, 0.8, 1.0]  # preset_boxplot_percentages
         if len(preset_boxplot_distances) != 0:
             print("Use preset boxplot distances.")
             self.preset_boxplot_distances = preset_boxplot_distances
@@ -215,13 +215,12 @@ class Trajectory:
         factor = 10.0 ** decimals
         return math.trunc(number * factor) / factor
 
-
     def compute_boxplot_distances(self):
         print("Computing preset subtrajectory lengths for relative errors...")
         print("Use percentage {0} of trajectory length.".format(self.boxplot_pcts))
         print("Trajectory length {0}".format(self.traj_length))
         self.preset_boxplot_distances = [self.truncate(pct*self.traj_length, 2)
-                                          for pct in self.boxplot_pcts]
+                                         for pct in self.boxplot_pcts]
 
         print("...done. Computed preset subtrajecory lengths:"
               " {0}".format(self.preset_boxplot_distances))
@@ -316,7 +315,7 @@ class Trajectory:
             dist_str = "{:3.1f}".format(dist).replace('.', '_')
             dist_fn = os.path.join(
                 self.saved_results_dir,
-                Trajectory.rel_error_prefix+dist_str + 
+                Trajectory.rel_error_prefix+dist_str +
                 self.suffix_str + '.yaml')
             for et, label in zip(kRelMetrics, kRelMetricLables):
                 res_writer.update_and_save_stats(
@@ -381,5 +380,5 @@ class Trajectory:
         for err_i in error_types:
             assert err_i in kRelMetrics
             rel_errors[err_i] = [[self.rel_errors[d][err_i]
-                                 for d in self.preset_boxplot_distances]]
+                                  for d in self.preset_boxplot_distances]]
         return rel_errors, self.preset_boxplot_distances

@@ -26,12 +26,14 @@ rc('text', usetex=True)
 
 FORMAT = '.pdf'
 
-def spec(N):                                             
-    t = np.linspace(-510, 510, N)                                              
+
+def spec(N):
+    t = np.linspace(-510, 510, N)
     return np.round(np.clip(np.stack([-t, 510-np.abs(t), t], axis=1), 0, 255)).astype("float32")/255
 
-PALLETE = spec(20)
 
+# PALLETE = spec(20)
+PALLETE = ["C%i" % i for i in range(10)] # see https://matplotlib.org/users/dflt_style_changes.html#colors-in-default-property-cycle
 
 def collect_odometry_error_per_dataset(dataset_multierror_list,
                                        dataset_names):
@@ -101,12 +103,12 @@ def plot_odometry_error_per_dataset(dataset_rel_err, dataset_names, algorithm_na
 
         fig = plt.figure(figsize=(12, 3))
         ax = fig.add_subplot(
-            121, xlabel='Distance traveled (m)',
+            121, xlabel='Subtrajectory length (m)',
             ylabel='Translation error (\%)')
         pu.boxplot_compare(ax, distances, [rel_err['trans_err_perc'][v] for v in algorithm_names],
                            config_labels, config_colors, legend=False)
         ax = fig.add_subplot(
-            122, xlabel='Distance traveled (m)', ylabel='Rotation error (deg / m)')
+            122, xlabel='Subtrajectory length (m)', ylabel='Rotation error (deg / m)')
         pu.boxplot_compare(ax, distances, [rel_err['rot_deg_per_m'][v] for v in algorithm_names],
                            config_labels, config_colors, legend=True)
         fig.tight_layout()
@@ -196,6 +198,7 @@ def plot_trajectories(dataset_trajectories_list, dataset_names, algorithm_names,
                              xlabel='x [m]', ylabel='y [m]')
         if dataset_nm in plot_settings['datasets_titles']:
             ax.set_title(plot_settings['datasets_titles'][dataset_nm])
+
         for alg in algorithm_names:
             if plot_traj_per_alg:
                 fig_i = plt.figure(figsize=(6, 5.5))
@@ -456,8 +459,8 @@ if __name__ == '__main__':
         "Not enough colors for all configurations"
     algo_colors = {}
     for i in range(len(algorithms)):
+        print(PALLETE[i])
         algo_colors[algorithms[i]] = PALLETE[i]
-
     print(Fore.YELLOW+"=== Evaluation Configuration Summary ===")
     print(Fore.YELLOW+"Datasests to evaluate: ")
     for d in datasets:
