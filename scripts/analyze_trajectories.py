@@ -192,7 +192,7 @@ def plot_trajectories(dataset_trajectories_list, dataset_names, algorithm_names,
 
         print("Plotting {0}...".format(dataset_nm))
 
-        # plot trajectory
+        # plot trajectory top
         fig = plt.figure(figsize=(6, 5.5))
         ax = fig.add_subplot(111, aspect='equal',
                              xlabel='x [m]', ylabel='y [m]')
@@ -238,7 +238,7 @@ def plot_trajectories(dataset_trajectories_list, dataset_names, algorithm_names,
             if plot_traj_per_alg:
                 fig_i = plt.figure(figsize=(6, 5.5))
                 ax_i = fig_i.add_subplot(111, aspect='equal',
-                                         xlabel='x [m]', ylabel='y [m]')
+                                         xlabel='x [m]', ylabel='z [m]')
                 pu.plot_trajectory_side(ax_i, p_es_0[alg], 'b',
                                         'Estimate ' + plot_settings['algo_labels'][alg], 0.5)
                 pu.plot_trajectory_side(ax_i, p_gt_0[alg], 'm', 'Groundtruth')
@@ -258,6 +258,36 @@ def plot_trajectories(dataset_trajectories_list, dataset_names, algorithm_names,
         fig.savefig(output_dir+'/'+dataset_nm +
                     '_trajectory_side'+FORMAT, bbox_inches="tight", dpi=args.dpi)
         plt.close(fig)
+
+        # plot trajectory height along x-y plane
+        if not plot_side:
+            continue
+        fig = plt.figure(figsize=(6, 4))
+        ax = fig.add_subplot(111,  xlabel="Distance traveled in x-y-plane [m]", ylabel="z [m]")
+        ax.xaxis.set_tick_params(labelsize="large")
+        if dataset_nm in plot_settings["datasets_titles"]:
+            ax.set_title(plot_settings["datasets_titles"][dataset_nm])
+        for alg in algorithm_names:
+            if plot_traj_per_alg:
+                fig_i = plt.figure(figsize=(6, 5.5))
+                ax_i = fig_i.add_subplot(111, xlabel="Distance travelled in x-y-plane [m]", ylabel="z [m]")
+                pu.plot_trajectory_height(ax_i, p_es_0[alg], "b",
+                                          "Estimate " + plot_settings["algo_labels"][alg], 0.5)
+                pu.plot_trajectory_height(ax_i, p_gt_0[alg], 'm', 'GT')
+                plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
+                fig_i.tight_layout()
+                fig_i.savefig(output_dir + "/" + dataset_nm + "_trajectory_height_" +
+                              plot_settings["algo_labels"][alg] + FORMAT, bbox_inches="tight", dpi=args.dpi)
+                plt.close(fig_i)
+            pu.plot_trajectory_height(ax, p_es_0[alg],
+                                      plot_settings["algo_colors"][alg], plot_settings["algo_labels"][alg])
+        plt.sca(ax)
+        pu.plot_trajectory_height(ax, p_gt_raw, "m", "GT")
+        plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
+        fig.tight_layout()
+        fig.savefig(output_dir + "/" + dataset_nm+"_trajectory_height"+FORMAT,
+                    bbox_inches="tight", dpi=args.dpi)
+
 
 
 def collect_odometry_error_per_algorithm(config_multierror_list, algorithms, distances,
@@ -438,7 +468,8 @@ if __name__ == '__main__':
     print("Will analyze results from {0} and output will be "
           "in {1}".format(args.results_dir, args.output_dir))
     output_dir = args.output_dir
-
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
     config_fn = os.path.join(config_path, args.config)
 
     print("Parsing evaluation configuration {0}...".format(config_fn))

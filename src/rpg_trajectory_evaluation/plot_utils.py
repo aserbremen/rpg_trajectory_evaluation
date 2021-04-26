@@ -69,6 +69,16 @@ def plot_trajectory_side(ax, pos, color, name, alpha=1.0):
     # pos_0 = pos - pos[0, :]
     ax.plot(pos[:, 0], pos[:, 2], color, linestyle='-', alpha=alpha, label=name)
 
+def plot_trajectory_height(ax, pos, color, name, alpha=1.0):
+    ax.grid(ls='--', color='0.7')
+    
+    xy_dists = [0]
+    xy_dist_so_far = 0
+    for i in range(len(pos)-1):
+        xy_dist_so_far += np.linalg.norm([pos[i+1][:2]-pos[i][:2]])
+        xy_dists.append(xy_dist_so_far)
+    ax.plot(xy_dists, pos[:,2], color+'-', alpha=alpha, label=name)
+
 
 def plot_aligned_top(ax, p_gt, p_es, n_align_frames):
     if n_align_frames <= 0:
