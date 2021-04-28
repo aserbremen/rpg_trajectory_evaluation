@@ -103,6 +103,9 @@ if __name__ == '__main__':
                         action='store_true')
     parser.add_argument('--no_plot', dest='plot',
                         action='store_false')
+    parser.add_argument('--plot_aligned',
+                        help="whether to plot alignment arrows between gt and traj",
+                        action='store_true')
     parser.set_defaults(plot=True)
     args = parser.parse_args()
 
@@ -132,16 +135,16 @@ if __name__ == '__main__':
           "Going to analyze the results in {0}.".format(args.result_dir))
     print(Fore.YELLOW +
           "Will analyze estimate types: {0}".format(args.est_types))
-    print(Fore.YELLOW + 
+    print(Fore.YELLOW +
           "The plots will saved in {0}.".format(plots_dirs))
     n_trials = 1
     if args.mul_trials:
-        print(Fore.YELLOW + 
+        print(Fore.YELLOW +
               "We will ananlyze multiple trials #{0}".format(args.mul_trials))
         n_trials = args.mul_trials
         if len(args.mul_plot_idx) == 0:
             args.mul_plot_idx = (np.arange(args.mul_trials)).tolist()
-        print(Fore.YELLOW + 
+        print(Fore.YELLOW +
               "We will plot trials {0}.".format(args.mul_plot_idx))
     else:
         args.mul_plot_idx = [0]
@@ -175,8 +178,9 @@ if __name__ == '__main__':
                              xlabel='x [m]', ylabel='y [m]')
         pu.plot_trajectory_top(ax, plot_traj.p_es_aligned, 'b', 'Estimate')
         pu.plot_trajectory_top(ax, plot_traj.p_gt, 'm', 'Groundtruth')
-        pu.plot_aligned_top(ax, plot_traj.p_es_aligned, plot_traj.p_gt,
-                            plot_traj.align_num_frames)
+        if args.plot_aligned:
+            pu.plot_aligned_top(ax, plot_traj.p_es_aligned, plot_traj.p_gt,
+                                plot_traj.align_num_frames)
         plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
         fig.tight_layout()
         fig.savefig(plot_dir_i+'/trajectory_top' + '_' + plot_traj.align_str +
@@ -194,10 +198,10 @@ if __name__ == '__main__':
 
         fig = plt.figure(figsize=(8, 2.5))
         ax = fig.add_subplot(
-            111, xlabel='Distance [m]', ylabel='Position Drift [mm]',
+            111, xlabel='Distance [m]', ylabel='Position Drift [m]',
             xlim=[0, plot_traj.accum_distances[-1]])
         pu.plot_error_n_dim(ax, plot_traj.accum_distances,
-                            plot_traj.abs_errors['abs_e_trans_vec']*1000,
+                            plot_traj.abs_errors['abs_e_trans_vec'],
                             plot_dir_i)
         ax.legend()
         fig.tight_layout()
@@ -305,4 +309,3 @@ if __name__ == '__main__':
     import subprocess as s
     s.call(['notify-send', 'rpg_trajectory_evaluation finished',
             'results in: {0}'.format(os.path.abspath(args.result_dir))])
-

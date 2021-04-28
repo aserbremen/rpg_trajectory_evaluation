@@ -270,7 +270,7 @@ def plot_trajectories(dataset_trajectories_list, dataset_names, algorithm_names,
         for alg in algorithm_names:
             if plot_traj_per_alg:
                 fig_i = plt.figure(figsize=(6, 5.5))
-                ax_i = fig_i.add_subplot(111, xlabel="Distance travelled in x-y-plane [m]", ylabel="z [m]")
+                ax_i = fig_i.add_subplot(111, xlabel="Distance traveled in x-y-plane [m]", ylabel="z [m]")
                 pu.plot_trajectory_height(ax_i, p_es_0[alg], "b",
                                           "Estimate " + plot_settings["algo_labels"][alg], 0.5)
                 pu.plot_trajectory_height(ax_i, p_gt_0[alg], 'm', 'GT')
