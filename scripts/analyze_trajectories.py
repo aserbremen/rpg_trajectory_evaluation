@@ -509,8 +509,7 @@ if __name__ == '__main__':
     if args.png:
         FORMAT = '.png'
 
-    eval_uid = '_'.join(list(plot_settings['algo_labels'].values())) +\
-        datetime.now().strftime("%Y%m%d%H%M")
+    eval_uid = '_'.join(datetime.now().strftime("%Y%m%d%H%M")
 
     n_trials = 1
     if args.mul_trials:
