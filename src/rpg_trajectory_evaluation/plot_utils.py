@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 from mpl_toolkits.mplot3d import Axes3D
 from matplotlib import rc
+import matplotlib.lines as mlines
 rc('font', **{'family': 'serif', 'serif': ['Cardo']})
 rc('text', usetex=True)
 
@@ -43,7 +44,7 @@ def boxplot_compare(ax, xlabels,
         bp = ax.boxplot(d, 0, '', positions=positions, widths=widths)
         color_box(bp, data_colors[idx])
         tmp, = plt.plot([1, 1], c=data_colors[idx], alpha=0)
-        leg_handles.append(tmp)
+        leg_handles.append(mlines.Line2D([], [], color=data_colors[idx])) # manually add color to handle
         leg_labels.append(data_labels[idx])
         idx += 1
 

@@ -33,7 +33,8 @@ def spec(N):
 
 
 # PALLETE = spec(20)
-PALLETE = ["C%i" % i for i in range(10)] # see https://matplotlib.org/users/dflt_style_changes.html#colors-in-default-property-cycle
+PALLETE = ["C%i" % i for i in range(10)]  # see https://matplotlib.org/users/dflt_style_changes.html#colors-in-default-property-cycle
+
 
 def collect_odometry_error_per_dataset(dataset_multierror_list,
                                        dataset_names):
@@ -289,7 +290,6 @@ def plot_trajectories(dataset_trajectories_list, dataset_names, algorithm_names,
                     bbox_inches="tight", dpi=args.dpi)
 
 
-
 def collect_odometry_error_per_algorithm(config_multierror_list, algorithms, distances,
                                          rel_keys=['rel_trans_perc', 'rel_rot_deg_per_m']):
     odometry_error_collection = {}
@@ -509,7 +509,7 @@ if __name__ == '__main__':
     if args.png:
         FORMAT = '.png'
 
-    eval_uid = '_'.join(datetime.now().strftime("%Y%m%d%H%M")
+    eval_uid = '_{}'.format(datetime.now().strftime("%Y_%m_%d_%H_%M"))
 
     n_trials = 1
     if args.mul_trials:
