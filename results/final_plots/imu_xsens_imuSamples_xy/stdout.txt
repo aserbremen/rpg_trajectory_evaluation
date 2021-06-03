@@ -1,0 +1,1026 @@
+Arguments:
+- mul_trials: None
+- plot_side: False
+- write_time_statistics: False
+- recalculate_errors: True
+- plot_trajectories: True
+- rmse_table: True
+- odometry_error_per_dataset: True
+- sort_names: False
+- results_dir: rpg_trajectory_evaluation/results
+- dpi: 300
+- platform: final_xy
+- rmse_boxplot: True
+- output_dir: rpg_trajectory_evaluation/results/final_plots/imu_xsens_imuSamples_xy
+- plot_traj_per_alg: True
+- time_statistics: False
+- rmse_median_only: False
+- overall_odometry_error: True
+- plot_aligned: False
+- config: imu_xsens_imuSamples.yaml
+- png: True
+Will analyze results from rpg_trajectory_evaluation/results and output will be in rpg_trajectory_evaluation/results/final_plots/imu_xsens_imuSamples_xy
+Parsing evaluation configuration /home/serov/code/cpp/multi_sensor_odometry/rpg_trajectory_evaluation/scripts/../analyze_trajectories_config/imu_xsens_imuSamples.yaml...
+C0
+C1
+C2
+=== Evaluation Configuration Summary ===
+Datasests to evaluate: 
+- ParkingGarage1: ParkingGarage1
+- ParkingGarage2: ParkingGarage2
+- ParkingGarage3: ParkingGarage3
+- Roedelheim1: Roedelheim1
+- Roedelheim2: Roedelheim2
+- Eschborn1: Eschborn1
+- Eschborn2: Eschborn2
+Algorithms to evaluate: 
+- imu_xsens_imuSamples1.0e+02: imu xsens imuSamples1.0e+02, traj_est, C0
+- imu_xsens_imuSamples5.0e+02: imu xsens imuSamples5.0e+02, traj_est, C1
+- imu_xsens_imuSamples1.0e+03: imu xsens imuSamples1.0e+03, traj_est, C2
+Will calculate odometry errors
+#####################################
+>>> Loading and calculating errors....
+#####################################
+--- Processing imu_xsens_imuSamples1.0e+02-ParkingGarage1... ---
+### Trial 0 ###
+To remove cached error in rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_ParkingGarage1
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_ParkingGarage1/saved_results/traj_est/cached/cached_rel_err.pickle
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_ParkingGarage1/saved_results/traj_est/stamped_est_gt_matches.txt
+Find evaluation configuration, will overwrite default.
+The current evaluation configuration is {'align_type': 'none', 'align_num_frames': -1}
+Loading stamped_groundtruth.txt and stamped_traj_estimate.txt...
+Loading trajectory data...
+Saved matching results to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_ParkingGarage1/saved_results/traj_est/stamped_est_gt_matches.txt.
+...done.
+Use preset boxplot distances.
+Aliging the trajectory estimate to the groundtruth...
+Alignment type is none.
+To align all frames.
+... trajectory alignment done.
+Calculating RMSE...
+Trajectory already aligned
+...RMSE calculated.
+Computing the relative errors based on preset subtrajectory lengths...
+Computing relative error at sub-trajectory length 50
+number of samples = 724 
+Computing relative error at sub-trajectory length 100
+number of samples = 497 
+Computing relative error at sub-trajectory length 250
+number of samples = 601 
+Computing relative error at sub-trajectory length 500
+number of samples = 466 
+Computing relative error at sub-trajectory length 1000
+number of samples = 144 
+...done.
+Saved relative error to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_ParkingGarage1/saved_results/traj_est/cached/cached_rel_err.pickle.
+===> MulTrajError: summarized 1 trajectories.
+- Successs indices: [0]
+Relative errors numbers:
+- 1000: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 144 samples
+- 500: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 466 samples
+- 50: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 724 samples
+- 100: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 497 samples
+- 250: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 601 samples
+--- Processing imu_xsens_imuSamples1.0e+02-ParkingGarage2... ---
+### Trial 0 ###
+To remove cached error in rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_ParkingGarage2
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_ParkingGarage2/saved_results/traj_est/cached/cached_rel_err.pickle
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_ParkingGarage2/saved_results/traj_est/stamped_est_gt_matches.txt
+Find evaluation configuration, will overwrite default.
+The current evaluation configuration is {'align_type': 'none', 'align_num_frames': -1}
+Loading stamped_groundtruth.txt and stamped_traj_estimate.txt...
+Loading trajectory data...
+Saved matching results to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_ParkingGarage2/saved_results/traj_est/stamped_est_gt_matches.txt.
+...done.
+Use preset boxplot distances.
+Aliging the trajectory estimate to the groundtruth...
+Alignment type is none.
+To align all frames.
+... trajectory alignment done.
+Calculating RMSE...
+Trajectory already aligned
+...RMSE calculated.
+Computing the relative errors based on preset subtrajectory lengths...
+Computing relative error at sub-trajectory length 50
+number of samples = 470 
+Computing relative error at sub-trajectory length 100
+number of samples = 447 
+Computing relative error at sub-trajectory length 250
+number of samples = 370 
+Computing relative error at sub-trajectory length 500
+number of samples = 296 
+Computing relative error at sub-trajectory length 1000
+number of samples = 179 
+...done.
+Saved relative error to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_ParkingGarage2/saved_results/traj_est/cached/cached_rel_err.pickle.
+===> MulTrajError: summarized 1 trajectories.
+- Successs indices: [0]
+Relative errors numbers:
+- 1000: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 179 samples
+- 500: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 296 samples
+- 50: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 470 samples
+- 100: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 447 samples
+- 250: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 370 samples
+--- Processing imu_xsens_imuSamples1.0e+02-ParkingGarage3... ---
+### Trial 0 ###
+To remove cached error in rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_ParkingGarage3
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_ParkingGarage3/saved_results/traj_est/cached/cached_rel_err.pickle
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_ParkingGarage3/saved_results/traj_est/stamped_est_gt_matches.txt
+Find evaluation configuration, will overwrite default.
+The current evaluation configuration is {'align_type': 'none', 'align_num_frames': -1}
+Loading stamped_groundtruth.txt and stamped_traj_estimate.txt...
+Loading trajectory data...
+Saved matching results to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_ParkingGarage3/saved_results/traj_est/stamped_est_gt_matches.txt.
+...done.
+Use preset boxplot distances.
+Aliging the trajectory estimate to the groundtruth...
+Alignment type is none.
+To align all frames.
+... trajectory alignment done.
+Calculating RMSE...
+Trajectory already aligned
+...RMSE calculated.
+Computing the relative errors based on preset subtrajectory lengths...
+Computing relative error at sub-trajectory length 50
+number of samples = 679 
+Computing relative error at sub-trajectory length 100
+number of samples = 575 
+Computing relative error at sub-trajectory length 250
+number of samples = 565 
+Computing relative error at sub-trajectory length 500
+number of samples = 321 
+Computing relative error at sub-trajectory length 1000
+number of samples = 148 
+...done.
+Saved relative error to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_ParkingGarage3/saved_results/traj_est/cached/cached_rel_err.pickle.
+===> MulTrajError: summarized 1 trajectories.
+- Successs indices: [0]
+Relative errors numbers:
+- 1000: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 148 samples
+- 500: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 321 samples
+- 50: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 679 samples
+- 100: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 575 samples
+- 250: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 565 samples
+--- Processing imu_xsens_imuSamples1.0e+02-Roedelheim1... ---
+### Trial 0 ###
+To remove cached error in rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_Roedelheim1
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_Roedelheim1/saved_results/traj_est/cached/cached_rel_err.pickle
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_Roedelheim1/saved_results/traj_est/stamped_est_gt_matches.txt
+Find evaluation configuration, will overwrite default.
+The current evaluation configuration is {'align_type': 'none', 'align_num_frames': -1}
+Loading stamped_groundtruth.txt and stamped_traj_estimate.txt...
+Loading trajectory data...
+Saved matching results to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_Roedelheim1/saved_results/traj_est/stamped_est_gt_matches.txt.
+...done.
+Use preset boxplot distances.
+Aliging the trajectory estimate to the groundtruth...
+Alignment type is none.
+To align all frames.
+... trajectory alignment done.
+Calculating RMSE...
+Trajectory already aligned
+...RMSE calculated.
+Computing the relative errors based on preset subtrajectory lengths...
+Computing relative error at sub-trajectory length 50
+number of samples = 1991 
+Computing relative error at sub-trajectory length 100
+number of samples = 1790 
+Computing relative error at sub-trajectory length 250
+number of samples = 1546 
+Computing relative error at sub-trajectory length 500
+number of samples = 1857 
+Computing relative error at sub-trajectory length 1000
+number of samples = 1731 
+...done.
+Saved relative error to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_Roedelheim1/saved_results/traj_est/cached/cached_rel_err.pickle.
+===> MulTrajError: summarized 1 trajectories.
+- Successs indices: [0]
+Relative errors numbers:
+- 1000: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 1731 samples
+- 500: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 1857 samples
+- 50: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 1991 samples
+- 100: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 1790 samples
+- 250: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 1546 samples
+--- Processing imu_xsens_imuSamples1.0e+02-Roedelheim2... ---
+### Trial 0 ###
+To remove cached error in rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_Roedelheim2
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_Roedelheim2/saved_results/traj_est/cached/cached_rel_err.pickle
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_Roedelheim2/saved_results/traj_est/stamped_est_gt_matches.txt
+Find evaluation configuration, will overwrite default.
+The current evaluation configuration is {'align_type': 'none', 'align_num_frames': -1}
+Loading stamped_groundtruth.txt and stamped_traj_estimate.txt...
+Loading trajectory data...
+Saved matching results to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_Roedelheim2/saved_results/traj_est/stamped_est_gt_matches.txt.
+...done.
+Use preset boxplot distances.
+Aliging the trajectory estimate to the groundtruth...
+Alignment type is none.
+To align all frames.
+... trajectory alignment done.
+Calculating RMSE...
+Trajectory already aligned
+...RMSE calculated.
+Computing the relative errors based on preset subtrajectory lengths...
+Computing relative error at sub-trajectory length 50
+number of samples = 2451 
+Computing relative error at sub-trajectory length 100
+number of samples = 2410 
+Computing relative error at sub-trajectory length 250
+number of samples = 2272 
+Computing relative error at sub-trajectory length 500
+number of samples = 2289 
+Computing relative error at sub-trajectory length 1000
+number of samples = 2143 
+...done.
+Saved relative error to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_Roedelheim2/saved_results/traj_est/cached/cached_rel_err.pickle.
+===> MulTrajError: summarized 1 trajectories.
+- Successs indices: [0]
+Relative errors numbers:
+- 1000: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 2143 samples
+- 500: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 2289 samples
+- 50: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 2451 samples
+- 100: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 2410 samples
+- 250: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 2272 samples
+--- Processing imu_xsens_imuSamples1.0e+02-Eschborn1... ---
+### Trial 0 ###
+To remove cached error in rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_Eschborn1
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_Eschborn1/saved_results/traj_est/cached/cached_rel_err.pickle
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_Eschborn1/saved_results/traj_est/stamped_est_gt_matches.txt
+Find evaluation configuration, will overwrite default.
+The current evaluation configuration is {'align_type': 'none', 'align_num_frames': -1}
+Loading stamped_groundtruth.txt and stamped_traj_estimate.txt...
+Loading trajectory data...
+Saved matching results to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_Eschborn1/saved_results/traj_est/stamped_est_gt_matches.txt.
+...done.
+Use preset boxplot distances.
+Aliging the trajectory estimate to the groundtruth...
+Alignment type is none.
+To align all frames.
+... trajectory alignment done.
+Calculating RMSE...
+Trajectory already aligned
+...RMSE calculated.
+Computing the relative errors based on preset subtrajectory lengths...
+Computing relative error at sub-trajectory length 50
+number of samples = 1220 
+Computing relative error at sub-trajectory length 100
+number of samples = 1190 
+Computing relative error at sub-trajectory length 250
+number of samples = 1114 
+Computing relative error at sub-trajectory length 500
+number of samples = 1150 
+Computing relative error at sub-trajectory length 1000
+number of samples = 1001 
+...done.
+Saved relative error to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_Eschborn1/saved_results/traj_est/cached/cached_rel_err.pickle.
+===> MulTrajError: summarized 1 trajectories.
+- Successs indices: [0]
+Relative errors numbers:
+- 1000: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 1001 samples
+- 500: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 1150 samples
+- 50: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 1220 samples
+- 100: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 1190 samples
+- 250: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 1114 samples
+--- Processing imu_xsens_imuSamples1.0e+02-Eschborn2... ---
+### Trial 0 ###
+To remove cached error in rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_Eschborn2
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_Eschborn2/saved_results/traj_est/cached/cached_rel_err.pickle
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_Eschborn2/saved_results/traj_est/stamped_est_gt_matches.txt
+Find evaluation configuration, will overwrite default.
+The current evaluation configuration is {'align_type': 'none', 'align_num_frames': -1}
+Loading stamped_groundtruth.txt and stamped_traj_estimate.txt...
+Loading trajectory data...
+Saved matching results to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_Eschborn2/saved_results/traj_est/stamped_est_gt_matches.txt.
+...done.
+Use preset boxplot distances.
+Aliging the trajectory estimate to the groundtruth...
+Alignment type is none.
+To align all frames.
+... trajectory alignment done.
+Calculating RMSE...
+Trajectory already aligned
+...RMSE calculated.
+Computing the relative errors based on preset subtrajectory lengths...
+Computing relative error at sub-trajectory length 50
+number of samples = 969 
+Computing relative error at sub-trajectory length 100
+number of samples = 881 
+Computing relative error at sub-trajectory length 250
+number of samples = 919 
+Computing relative error at sub-trajectory length 500
+number of samples = 943 
+Computing relative error at sub-trajectory length 1000
+number of samples = 881 
+...done.
+Saved relative error to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+02/final_xy_imu_xsens_imuSamples1.0e+02_Eschborn2/saved_results/traj_est/cached/cached_rel_err.pickle.
+===> MulTrajError: summarized 1 trajectories.
+- Successs indices: [0]
+Relative errors numbers:
+- 1000: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 881 samples
+- 500: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 943 samples
+- 50: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 969 samples
+- 100: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 881 samples
+- 250: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 919 samples
+--- Processing imu_xsens_imuSamples5.0e+02-ParkingGarage1... ---
+### Trial 0 ###
+To remove cached error in rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_ParkingGarage1
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_ParkingGarage1/saved_results/traj_est/cached/cached_rel_err.pickle
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_ParkingGarage1/saved_results/traj_est/stamped_est_gt_matches.txt
+Find evaluation configuration, will overwrite default.
+The current evaluation configuration is {'align_type': 'none', 'align_num_frames': -1}
+Loading stamped_groundtruth.txt and stamped_traj_estimate.txt...
+Loading trajectory data...
+Saved matching results to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_ParkingGarage1/saved_results/traj_est/stamped_est_gt_matches.txt.
+...done.
+Use preset boxplot distances.
+Aliging the trajectory estimate to the groundtruth...
+Alignment type is none.
+To align all frames.
+... trajectory alignment done.
+Calculating RMSE...
+Trajectory already aligned
+...RMSE calculated.
+Computing the relative errors based on preset subtrajectory lengths...
+Computing relative error at sub-trajectory length 50
+number of samples = 708 
+Computing relative error at sub-trajectory length 100
+number of samples = 481 
+Computing relative error at sub-trajectory length 250
+number of samples = 586 
+Computing relative error at sub-trajectory length 500
+number of samples = 450 
+Computing relative error at sub-trajectory length 1000
+number of samples = 128 
+...done.
+Saved relative error to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_ParkingGarage1/saved_results/traj_est/cached/cached_rel_err.pickle.
+===> MulTrajError: summarized 1 trajectories.
+- Successs indices: [0]
+Relative errors numbers:
+- 1000: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 128 samples
+- 500: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 450 samples
+- 50: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 708 samples
+- 100: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 481 samples
+- 250: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 586 samples
+--- Processing imu_xsens_imuSamples5.0e+02-ParkingGarage2... ---
+### Trial 0 ###
+To remove cached error in rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_ParkingGarage2
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_ParkingGarage2/saved_results/traj_est/cached/cached_rel_err.pickle
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_ParkingGarage2/saved_results/traj_est/stamped_est_gt_matches.txt
+Find evaluation configuration, will overwrite default.
+The current evaluation configuration is {'align_type': 'none', 'align_num_frames': -1}
+Loading stamped_groundtruth.txt and stamped_traj_estimate.txt...
+Loading trajectory data...
+Saved matching results to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_ParkingGarage2/saved_results/traj_est/stamped_est_gt_matches.txt.
+...done.
+Use preset boxplot distances.
+Aliging the trajectory estimate to the groundtruth...
+Alignment type is none.
+To align all frames.
+... trajectory alignment done.
+Calculating RMSE...
+Trajectory already aligned
+...RMSE calculated.
+Computing the relative errors based on preset subtrajectory lengths...
+Computing relative error at sub-trajectory length 50
+number of samples = 455 
+Computing relative error at sub-trajectory length 100
+number of samples = 432 
+Computing relative error at sub-trajectory length 250
+number of samples = 355 
+Computing relative error at sub-trajectory length 500
+number of samples = 281 
+Computing relative error at sub-trajectory length 1000
+number of samples = 164 
+...done.
+Saved relative error to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_ParkingGarage2/saved_results/traj_est/cached/cached_rel_err.pickle.
+===> MulTrajError: summarized 1 trajectories.
+- Successs indices: [0]
+Relative errors numbers:
+- 1000: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 164 samples
+- 500: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 281 samples
+- 50: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 455 samples
+- 100: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 432 samples
+- 250: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 355 samples
+--- Processing imu_xsens_imuSamples5.0e+02-ParkingGarage3... ---
+### Trial 0 ###
+To remove cached error in rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_ParkingGarage3
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_ParkingGarage3/saved_results/traj_est/cached/cached_rel_err.pickle
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_ParkingGarage3/saved_results/traj_est/stamped_est_gt_matches.txt
+Find evaluation configuration, will overwrite default.
+The current evaluation configuration is {'align_type': 'none', 'align_num_frames': -1}
+Loading stamped_groundtruth.txt and stamped_traj_estimate.txt...
+Loading trajectory data...
+Saved matching results to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_ParkingGarage3/saved_results/traj_est/stamped_est_gt_matches.txt.
+...done.
+Use preset boxplot distances.
+Aliging the trajectory estimate to the groundtruth...
+Alignment type is none.
+To align all frames.
+... trajectory alignment done.
+Calculating RMSE...
+Trajectory already aligned
+...RMSE calculated.
+Computing the relative errors based on preset subtrajectory lengths...
+Computing relative error at sub-trajectory length 50
+number of samples = 664 
+Computing relative error at sub-trajectory length 100
+number of samples = 559 
+Computing relative error at sub-trajectory length 250
+number of samples = 550 
+Computing relative error at sub-trajectory length 500
+number of samples = 307 
+Computing relative error at sub-trajectory length 1000
+number of samples = 132 
+...done.
+Saved relative error to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_ParkingGarage3/saved_results/traj_est/cached/cached_rel_err.pickle.
+===> MulTrajError: summarized 1 trajectories.
+- Successs indices: [0]
+Relative errors numbers:
+- 1000: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 132 samples
+- 500: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 307 samples
+- 50: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 664 samples
+- 100: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 559 samples
+- 250: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 550 samples
+--- Processing imu_xsens_imuSamples5.0e+02-Roedelheim1... ---
+### Trial 0 ###
+To remove cached error in rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_Roedelheim1
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_Roedelheim1/saved_results/traj_est/cached/cached_rel_err.pickle
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_Roedelheim1/saved_results/traj_est/stamped_est_gt_matches.txt
+Find evaluation configuration, will overwrite default.
+The current evaluation configuration is {'align_type': 'none', 'align_num_frames': -1}
+Loading stamped_groundtruth.txt and stamped_traj_estimate.txt...
+Loading trajectory data...
+Saved matching results to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_Roedelheim1/saved_results/traj_est/stamped_est_gt_matches.txt.
+...done.
+Use preset boxplot distances.
+Aliging the trajectory estimate to the groundtruth...
+Alignment type is none.
+To align all frames.
+... trajectory alignment done.
+Calculating RMSE...
+Trajectory already aligned
+...RMSE calculated.
+Computing the relative errors based on preset subtrajectory lengths...
+Computing relative error at sub-trajectory length 50
+number of samples = 1975 
+Computing relative error at sub-trajectory length 100
+number of samples = 1774 
+Computing relative error at sub-trajectory length 250
+number of samples = 1529 
+Computing relative error at sub-trajectory length 500
+number of samples = 1840 
+Computing relative error at sub-trajectory length 1000
+number of samples = 1714 
+...done.
+Saved relative error to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_Roedelheim1/saved_results/traj_est/cached/cached_rel_err.pickle.
+===> MulTrajError: summarized 1 trajectories.
+- Successs indices: [0]
+Relative errors numbers:
+- 1000: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 1714 samples
+- 500: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 1840 samples
+- 50: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 1975 samples
+- 100: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 1774 samples
+- 250: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 1529 samples
+--- Processing imu_xsens_imuSamples5.0e+02-Roedelheim2... ---
+### Trial 0 ###
+To remove cached error in rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_Roedelheim2
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_Roedelheim2/saved_results/traj_est/cached/cached_rel_err.pickle
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_Roedelheim2/saved_results/traj_est/stamped_est_gt_matches.txt
+Find evaluation configuration, will overwrite default.
+The current evaluation configuration is {'align_type': 'none', 'align_num_frames': -1}
+Loading stamped_groundtruth.txt and stamped_traj_estimate.txt...
+Loading trajectory data...
+Saved matching results to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_Roedelheim2/saved_results/traj_est/stamped_est_gt_matches.txt.
+...done.
+Use preset boxplot distances.
+Aliging the trajectory estimate to the groundtruth...
+Alignment type is none.
+To align all frames.
+... trajectory alignment done.
+Calculating RMSE...
+Trajectory already aligned
+...RMSE calculated.
+Computing the relative errors based on preset subtrajectory lengths...
+Computing relative error at sub-trajectory length 50
+number of samples = 2451 
+Computing relative error at sub-trajectory length 100
+number of samples = 2410 
+Computing relative error at sub-trajectory length 250
+number of samples = 2272 
+Computing relative error at sub-trajectory length 500
+number of samples = 2289 
+Computing relative error at sub-trajectory length 1000
+number of samples = 2143 
+...done.
+Saved relative error to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_Roedelheim2/saved_results/traj_est/cached/cached_rel_err.pickle.
+===> MulTrajError: summarized 1 trajectories.
+- Successs indices: [0]
+Relative errors numbers:
+- 1000: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 2143 samples
+- 500: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 2289 samples
+- 50: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 2451 samples
+- 100: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 2410 samples
+- 250: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 2272 samples
+--- Processing imu_xsens_imuSamples5.0e+02-Eschborn1... ---
+### Trial 0 ###
+To remove cached error in rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_Eschborn1
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_Eschborn1/saved_results/traj_est/cached/cached_rel_err.pickle
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_Eschborn1/saved_results/traj_est/stamped_est_gt_matches.txt
+Find evaluation configuration, will overwrite default.
+The current evaluation configuration is {'align_type': 'none', 'align_num_frames': -1}
+Loading stamped_groundtruth.txt and stamped_traj_estimate.txt...
+Loading trajectory data...
+Saved matching results to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_Eschborn1/saved_results/traj_est/stamped_est_gt_matches.txt.
+...done.
+Use preset boxplot distances.
+Aliging the trajectory estimate to the groundtruth...
+Alignment type is none.
+To align all frames.
+... trajectory alignment done.
+Calculating RMSE...
+Trajectory already aligned
+...RMSE calculated.
+Computing the relative errors based on preset subtrajectory lengths...
+Computing relative error at sub-trajectory length 50
+number of samples = 1205 
+Computing relative error at sub-trajectory length 100
+number of samples = 1175 
+Computing relative error at sub-trajectory length 250
+number of samples = 1100 
+Computing relative error at sub-trajectory length 500
+number of samples = 1136 
+Computing relative error at sub-trajectory length 1000
+number of samples = 986 
+...done.
+Saved relative error to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_Eschborn1/saved_results/traj_est/cached/cached_rel_err.pickle.
+===> MulTrajError: summarized 1 trajectories.
+- Successs indices: [0]
+Relative errors numbers:
+- 1000: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 986 samples
+- 500: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 1136 samples
+- 50: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 1205 samples
+- 100: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 1175 samples
+- 250: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 1100 samples
+--- Processing imu_xsens_imuSamples5.0e+02-Eschborn2... ---
+### Trial 0 ###
+To remove cached error in rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_Eschborn2
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_Eschborn2/saved_results/traj_est/cached/cached_rel_err.pickle
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_Eschborn2/saved_results/traj_est/stamped_est_gt_matches.txt
+Find evaluation configuration, will overwrite default.
+The current evaluation configuration is {'align_type': 'none', 'align_num_frames': -1}
+Loading stamped_groundtruth.txt and stamped_traj_estimate.txt...
+Loading trajectory data...
+Saved matching results to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_Eschborn2/saved_results/traj_est/stamped_est_gt_matches.txt.
+...done.
+Use preset boxplot distances.
+Aliging the trajectory estimate to the groundtruth...
+Alignment type is none.
+To align all frames.
+... trajectory alignment done.
+Calculating RMSE...
+Trajectory already aligned
+...RMSE calculated.
+Computing the relative errors based on preset subtrajectory lengths...
+Computing relative error at sub-trajectory length 50
+number of samples = 954 
+Computing relative error at sub-trajectory length 100
+number of samples = 866 
+Computing relative error at sub-trajectory length 250
+number of samples = 904 
+Computing relative error at sub-trajectory length 500
+number of samples = 929 
+Computing relative error at sub-trajectory length 1000
+number of samples = 866 
+...done.
+Saved relative error to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples5.0e+02/final_xy_imu_xsens_imuSamples5.0e+02_Eschborn2/saved_results/traj_est/cached/cached_rel_err.pickle.
+===> MulTrajError: summarized 1 trajectories.
+- Successs indices: [0]
+Relative errors numbers:
+- 1000: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 866 samples
+- 500: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 929 samples
+- 50: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 954 samples
+- 100: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 866 samples
+- 250: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 904 samples
+--- Processing imu_xsens_imuSamples1.0e+03-ParkingGarage1... ---
+### Trial 0 ###
+To remove cached error in rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_ParkingGarage1
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_ParkingGarage1/saved_results/traj_est/cached/cached_rel_err.pickle
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_ParkingGarage1/saved_results/traj_est/stamped_est_gt_matches.txt
+Find evaluation configuration, will overwrite default.
+The current evaluation configuration is {'align_type': 'none', 'align_num_frames': -1}
+Loading stamped_groundtruth.txt and stamped_traj_estimate.txt...
+Loading trajectory data...
+Saved matching results to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_ParkingGarage1/saved_results/traj_est/stamped_est_gt_matches.txt.
+...done.
+Use preset boxplot distances.
+Aliging the trajectory estimate to the groundtruth...
+Alignment type is none.
+To align all frames.
+... trajectory alignment done.
+Calculating RMSE...
+Trajectory already aligned
+...RMSE calculated.
+Computing the relative errors based on preset subtrajectory lengths...
+Computing relative error at sub-trajectory length 50
+number of samples = 689 
+Computing relative error at sub-trajectory length 100
+number of samples = 462 
+Computing relative error at sub-trajectory length 250
+number of samples = 567 
+Computing relative error at sub-trajectory length 500
+number of samples = 431 
+Computing relative error at sub-trajectory length 1000
+number of samples = 109 
+...done.
+Saved relative error to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_ParkingGarage1/saved_results/traj_est/cached/cached_rel_err.pickle.
+===> MulTrajError: summarized 1 trajectories.
+- Successs indices: [0]
+Relative errors numbers:
+- 1000: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 109 samples
+- 500: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 431 samples
+- 50: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 689 samples
+- 100: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 462 samples
+- 250: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 567 samples
+--- Processing imu_xsens_imuSamples1.0e+03-ParkingGarage2... ---
+### Trial 0 ###
+To remove cached error in rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_ParkingGarage2
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_ParkingGarage2/saved_results/traj_est/cached/cached_rel_err.pickle
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_ParkingGarage2/saved_results/traj_est/stamped_est_gt_matches.txt
+Find evaluation configuration, will overwrite default.
+The current evaluation configuration is {'align_type': 'none', 'align_num_frames': -1}
+Loading stamped_groundtruth.txt and stamped_traj_estimate.txt...
+Loading trajectory data...
+Saved matching results to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_ParkingGarage2/saved_results/traj_est/stamped_est_gt_matches.txt.
+...done.
+Use preset boxplot distances.
+Aliging the trajectory estimate to the groundtruth...
+Alignment type is none.
+To align all frames.
+... trajectory alignment done.
+Calculating RMSE...
+Trajectory already aligned
+...RMSE calculated.
+Computing the relative errors based on preset subtrajectory lengths...
+Computing relative error at sub-trajectory length 50
+number of samples = 435 
+Computing relative error at sub-trajectory length 100
+number of samples = 412 
+Computing relative error at sub-trajectory length 250
+number of samples = 336 
+Computing relative error at sub-trajectory length 500
+number of samples = 262 
+Computing relative error at sub-trajectory length 1000
+number of samples = 145 
+...done.
+Saved relative error to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_ParkingGarage2/saved_results/traj_est/cached/cached_rel_err.pickle.
+===> MulTrajError: summarized 1 trajectories.
+- Successs indices: [0]
+Relative errors numbers:
+- 1000: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 145 samples
+- 500: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 262 samples
+- 50: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 435 samples
+- 100: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 412 samples
+- 250: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 336 samples
+--- Processing imu_xsens_imuSamples1.0e+03-ParkingGarage3... ---
+### Trial 0 ###
+To remove cached error in rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_ParkingGarage3
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_ParkingGarage3/saved_results/traj_est/cached/cached_rel_err.pickle
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_ParkingGarage3/saved_results/traj_est/stamped_est_gt_matches.txt
+Find evaluation configuration, will overwrite default.
+The current evaluation configuration is {'align_type': 'none', 'align_num_frames': -1}
+Loading stamped_groundtruth.txt and stamped_traj_estimate.txt...
+Loading trajectory data...
+Saved matching results to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_ParkingGarage3/saved_results/traj_est/stamped_est_gt_matches.txt.
+...done.
+Use preset boxplot distances.
+Aliging the trajectory estimate to the groundtruth...
+Alignment type is none.
+To align all frames.
+... trajectory alignment done.
+Calculating RMSE...
+Trajectory already aligned
+...RMSE calculated.
+Computing the relative errors based on preset subtrajectory lengths...
+Computing relative error at sub-trajectory length 50
+number of samples = 645 
+Computing relative error at sub-trajectory length 100
+number of samples = 540 
+Computing relative error at sub-trajectory length 250
+number of samples = 530 
+Computing relative error at sub-trajectory length 500
+number of samples = 286 
+Computing relative error at sub-trajectory length 1000
+number of samples = 113 
+...done.
+Saved relative error to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_ParkingGarage3/saved_results/traj_est/cached/cached_rel_err.pickle.
+===> MulTrajError: summarized 1 trajectories.
+- Successs indices: [0]
+Relative errors numbers:
+- 1000: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 113 samples
+- 500: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 286 samples
+- 50: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 645 samples
+- 100: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 540 samples
+- 250: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 530 samples
+--- Processing imu_xsens_imuSamples1.0e+03-Roedelheim1... ---
+### Trial 0 ###
+To remove cached error in rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_Roedelheim1
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_Roedelheim1/saved_results/traj_est/cached/cached_rel_err.pickle
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_Roedelheim1/saved_results/traj_est/stamped_est_gt_matches.txt
+Find evaluation configuration, will overwrite default.
+The current evaluation configuration is {'align_type': 'none', 'align_num_frames': -1}
+Loading stamped_groundtruth.txt and stamped_traj_estimate.txt...
+Loading trajectory data...
+Saved matching results to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_Roedelheim1/saved_results/traj_est/stamped_est_gt_matches.txt.
+...done.
+Use preset boxplot distances.
+Aliging the trajectory estimate to the groundtruth...
+Alignment type is none.
+To align all frames.
+... trajectory alignment done.
+Calculating RMSE...
+Trajectory already aligned
+...RMSE calculated.
+Computing the relative errors based on preset subtrajectory lengths...
+Computing relative error at sub-trajectory length 50
+number of samples = 1958 
+Computing relative error at sub-trajectory length 100
+number of samples = 1757 
+Computing relative error at sub-trajectory length 250
+number of samples = 1512 
+Computing relative error at sub-trajectory length 500
+number of samples = 1823 
+Computing relative error at sub-trajectory length 1000
+number of samples = 1697 
+...done.
+Saved relative error to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_Roedelheim1/saved_results/traj_est/cached/cached_rel_err.pickle.
+===> MulTrajError: summarized 1 trajectories.
+- Successs indices: [0]
+Relative errors numbers:
+- 1000: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 1697 samples
+- 500: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 1823 samples
+- 50: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 1958 samples
+- 100: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 1757 samples
+- 250: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 1512 samples
+--- Processing imu_xsens_imuSamples1.0e+03-Roedelheim2... ---
+### Trial 0 ###
+To remove cached error in rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_Roedelheim2
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_Roedelheim2/saved_results/traj_est/cached/cached_rel_err.pickle
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_Roedelheim2/saved_results/traj_est/stamped_est_gt_matches.txt
+Find evaluation configuration, will overwrite default.
+The current evaluation configuration is {'align_type': 'none', 'align_num_frames': -1}
+Loading stamped_groundtruth.txt and stamped_traj_estimate.txt...
+Loading trajectory data...
+Saved matching results to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_Roedelheim2/saved_results/traj_est/stamped_est_gt_matches.txt.
+...done.
+Use preset boxplot distances.
+Aliging the trajectory estimate to the groundtruth...
+Alignment type is none.
+To align all frames.
+... trajectory alignment done.
+Calculating RMSE...
+Trajectory already aligned
+...RMSE calculated.
+Computing the relative errors based on preset subtrajectory lengths...
+Computing relative error at sub-trajectory length 50
+number of samples = 2451 
+Computing relative error at sub-trajectory length 100
+number of samples = 2410 
+Computing relative error at sub-trajectory length 250
+number of samples = 2272 
+Computing relative error at sub-trajectory length 500
+number of samples = 2289 
+Computing relative error at sub-trajectory length 1000
+number of samples = 2143 
+...done.
+Saved relative error to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_Roedelheim2/saved_results/traj_est/cached/cached_rel_err.pickle.
+===> MulTrajError: summarized 1 trajectories.
+- Successs indices: [0]
+Relative errors numbers:
+- 1000: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 2143 samples
+- 500: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 2289 samples
+- 50: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 2451 samples
+- 100: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 2410 samples
+- 250: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 2272 samples
+--- Processing imu_xsens_imuSamples1.0e+03-Eschborn1... ---
+### Trial 0 ###
+To remove cached error in rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_Eschborn1
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_Eschborn1/saved_results/traj_est/cached/cached_rel_err.pickle
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_Eschborn1/saved_results/traj_est/stamped_est_gt_matches.txt
+Find evaluation configuration, will overwrite default.
+The current evaluation configuration is {'align_type': 'none', 'align_num_frames': -1}
+Loading stamped_groundtruth.txt and stamped_traj_estimate.txt...
+Loading trajectory data...
+Saved matching results to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_Eschborn1/saved_results/traj_est/stamped_est_gt_matches.txt.
+...done.
+Use preset boxplot distances.
+Aliging the trajectory estimate to the groundtruth...
+Alignment type is none.
+To align all frames.
+... trajectory alignment done.
+Calculating RMSE...
+Trajectory already aligned
+...RMSE calculated.
+Computing the relative errors based on preset subtrajectory lengths...
+Computing relative error at sub-trajectory length 50
+number of samples = 1186 
+Computing relative error at sub-trajectory length 100
+number of samples = 1156 
+Computing relative error at sub-trajectory length 250
+number of samples = 1081 
+Computing relative error at sub-trajectory length 500
+number of samples = 1117 
+Computing relative error at sub-trajectory length 1000
+number of samples = 967 
+...done.
+Saved relative error to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_Eschborn1/saved_results/traj_est/cached/cached_rel_err.pickle.
+===> MulTrajError: summarized 1 trajectories.
+- Successs indices: [0]
+Relative errors numbers:
+- 1000: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 967 samples
+- 500: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 1117 samples
+- 50: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 1186 samples
+- 100: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 1156 samples
+- 250: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 1081 samples
+--- Processing imu_xsens_imuSamples1.0e+03-Eschborn2... ---
+### Trial 0 ###
+To remove cached error in rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_Eschborn2
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_Eschborn2/saved_results/traj_est/cached/cached_rel_err.pickle
+Cannot find file rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_Eschborn2/saved_results/traj_est/stamped_est_gt_matches.txt
+Find evaluation configuration, will overwrite default.
+The current evaluation configuration is {'align_type': 'none', 'align_num_frames': -1}
+Loading stamped_groundtruth.txt and stamped_traj_estimate.txt...
+Loading trajectory data...
+Saved matching results to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_Eschborn2/saved_results/traj_est/stamped_est_gt_matches.txt.
+...done.
+Use preset boxplot distances.
+Aliging the trajectory estimate to the groundtruth...
+Alignment type is none.
+To align all frames.
+... trajectory alignment done.
+Calculating RMSE...
+Trajectory already aligned
+...RMSE calculated.
+Computing the relative errors based on preset subtrajectory lengths...
+Computing relative error at sub-trajectory length 50
+number of samples = 935 
+Computing relative error at sub-trajectory length 100
+number of samples = 847 
+Computing relative error at sub-trajectory length 250
+number of samples = 885 
+Computing relative error at sub-trajectory length 500
+number of samples = 910 
+Computing relative error at sub-trajectory length 1000
+number of samples = 847 
+...done.
+Saved relative error to rpg_trajectory_evaluation/results/final_xy/imu_xsens_imuSamples1.0e+03/final_xy_imu_xsens_imuSamples1.0e+03_Eschborn2/saved_results/traj_est/cached/cached_rel_err.pickle.
+===> MulTrajError: summarized 1 trajectories.
+- Successs indices: [0]
+Relative errors numbers:
+- 1000: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 847 samples
+- 500: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 910 samples
+- 50: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 935 samples
+- 100: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 847 samples
+- 250: ['rel_gravity', 'rel_trans_perc', 'rel_yaw', 'rel_trans', 'rel_rot', 'rel_rot_deg_per_m'] 885 samples
+#####################################
+>>> Analyze different error types...
+#####################################
+>>> Processing absolute trajectory errors...
+> Processing final_xy_imu_xsens_imuSamples1.0e+02_ParkingGarage1_1
+> Processing final_xy_imu_xsens_imuSamples1.0e+02_ParkingGarage2_1
+> Processing final_xy_imu_xsens_imuSamples1.0e+02_ParkingGarage3_1
+> Processing final_xy_imu_xsens_imuSamples1.0e+02_Roedelheim1_1
+> Processing final_xy_imu_xsens_imuSamples1.0e+02_Roedelheim2_1
+> Processing final_xy_imu_xsens_imuSamples1.0e+02_Eschborn1_1
+> Processing final_xy_imu_xsens_imuSamples1.0e+02_Eschborn2_1
+> Processing final_xy_imu_xsens_imuSamples5.0e+02_ParkingGarage1_1
+> Processing final_xy_imu_xsens_imuSamples5.0e+02_ParkingGarage2_1
+> Processing final_xy_imu_xsens_imuSamples5.0e+02_ParkingGarage3_1
+> Processing final_xy_imu_xsens_imuSamples5.0e+02_Roedelheim1_1
+> Processing final_xy_imu_xsens_imuSamples5.0e+02_Roedelheim2_1
+> Processing final_xy_imu_xsens_imuSamples5.0e+02_Eschborn1_1
+> Processing final_xy_imu_xsens_imuSamples5.0e+02_Eschborn2_1
+> Processing final_xy_imu_xsens_imuSamples1.0e+03_ParkingGarage1_1
+> Processing final_xy_imu_xsens_imuSamples1.0e+03_ParkingGarage2_1
+> Processing final_xy_imu_xsens_imuSamples1.0e+03_ParkingGarage3_1
+> Processing final_xy_imu_xsens_imuSamples1.0e+03_Roedelheim1_1
+> Processing final_xy_imu_xsens_imuSamples1.0e+03_Roedelheim2_1
+> Processing final_xy_imu_xsens_imuSamples1.0e+03_Eschborn1_1
+> Processing final_xy_imu_xsens_imuSamples1.0e+03_Eschborn2_1
+
+--- Generating RMSE tables... ---
+<<< ...processing absolute trajectory errors done.
+>>> Collecting odometry errors per dataset...
+
+>>> Collecting relative error (KITTI style)...
+> Processing ParkingGarage1 for all configurations...
+> Found 3 configurations.
+  - imu_xsens_imuSamples1.0e+02: final_xy_imu_xsens_imuSamples1.0e+02_ParkingGarage1_1
+  - imu_xsens_imuSamples5.0e+02: final_xy_imu_xsens_imuSamples5.0e+02_ParkingGarage1_1
+  - imu_xsens_imuSamples1.0e+03: final_xy_imu_xsens_imuSamples1.0e+03_ParkingGarage1_1
+Using distances [50, 100, 250, 500, 1000] for relative error.
+Processing each configurations...
+  - imu_xsens_imuSamples1.0e+02
+  - imu_xsens_imuSamples5.0e+02
+  - imu_xsens_imuSamples1.0e+03
+< Finish processing ParkingGarage1 for all configurations.
+> Processing ParkingGarage2 for all configurations...
+> Found 3 configurations.
+  - imu_xsens_imuSamples1.0e+02: final_xy_imu_xsens_imuSamples1.0e+02_ParkingGarage2_1
+  - imu_xsens_imuSamples5.0e+02: final_xy_imu_xsens_imuSamples5.0e+02_ParkingGarage2_1
+  - imu_xsens_imuSamples1.0e+03: final_xy_imu_xsens_imuSamples1.0e+03_ParkingGarage2_1
+Using distances [50, 100, 250, 500, 1000] for relative error.
+Processing each configurations...
+  - imu_xsens_imuSamples1.0e+02
+  - imu_xsens_imuSamples5.0e+02
+  - imu_xsens_imuSamples1.0e+03
+< Finish processing ParkingGarage2 for all configurations.
+> Processing ParkingGarage3 for all configurations...
+> Found 3 configurations.
+  - imu_xsens_imuSamples1.0e+02: final_xy_imu_xsens_imuSamples1.0e+02_ParkingGarage3_1
+  - imu_xsens_imuSamples5.0e+02: final_xy_imu_xsens_imuSamples5.0e+02_ParkingGarage3_1
+  - imu_xsens_imuSamples1.0e+03: final_xy_imu_xsens_imuSamples1.0e+03_ParkingGarage3_1
+Using distances [50, 100, 250, 500, 1000] for relative error.
+Processing each configurations...
+  - imu_xsens_imuSamples1.0e+02
+  - imu_xsens_imuSamples5.0e+02
+  - imu_xsens_imuSamples1.0e+03
+< Finish processing ParkingGarage3 for all configurations.
+> Processing Roedelheim1 for all configurations...
+> Found 3 configurations.
+  - imu_xsens_imuSamples1.0e+02: final_xy_imu_xsens_imuSamples1.0e+02_Roedelheim1_1
+  - imu_xsens_imuSamples5.0e+02: final_xy_imu_xsens_imuSamples5.0e+02_Roedelheim1_1
+  - imu_xsens_imuSamples1.0e+03: final_xy_imu_xsens_imuSamples1.0e+03_Roedelheim1_1
+Using distances [50, 100, 250, 500, 1000] for relative error.
+Processing each configurations...
+  - imu_xsens_imuSamples1.0e+02
+  - imu_xsens_imuSamples5.0e+02
+  - imu_xsens_imuSamples1.0e+03
+< Finish processing Roedelheim1 for all configurations.
+> Processing Roedelheim2 for all configurations...
+> Found 3 configurations.
+  - imu_xsens_imuSamples1.0e+02: final_xy_imu_xsens_imuSamples1.0e+02_Roedelheim2_1
+  - imu_xsens_imuSamples5.0e+02: final_xy_imu_xsens_imuSamples5.0e+02_Roedelheim2_1
+  - imu_xsens_imuSamples1.0e+03: final_xy_imu_xsens_imuSamples1.0e+03_Roedelheim2_1
+Using distances [50, 100, 250, 500, 1000] for relative error.
+Processing each configurations...
+  - imu_xsens_imuSamples1.0e+02
+  - imu_xsens_imuSamples5.0e+02
+  - imu_xsens_imuSamples1.0e+03
+< Finish processing Roedelheim2 for all configurations.
+> Processing Eschborn1 for all configurations...
+> Found 3 configurations.
+  - imu_xsens_imuSamples1.0e+02: final_xy_imu_xsens_imuSamples1.0e+02_Eschborn1_1
+  - imu_xsens_imuSamples5.0e+02: final_xy_imu_xsens_imuSamples5.0e+02_Eschborn1_1
+  - imu_xsens_imuSamples1.0e+03: final_xy_imu_xsens_imuSamples1.0e+03_Eschborn1_1
+Using distances [50, 100, 250, 500, 1000] for relative error.
+Processing each configurations...
+  - imu_xsens_imuSamples1.0e+02
+  - imu_xsens_imuSamples5.0e+02
+  - imu_xsens_imuSamples1.0e+03
+< Finish processing Eschborn1 for all configurations.
+> Processing Eschborn2 for all configurations...
+> Found 3 configurations.
+  - imu_xsens_imuSamples1.0e+02: final_xy_imu_xsens_imuSamples1.0e+02_Eschborn2_1
+  - imu_xsens_imuSamples5.0e+02: final_xy_imu_xsens_imuSamples5.0e+02_Eschborn2_1
+  - imu_xsens_imuSamples1.0e+03: final_xy_imu_xsens_imuSamples1.0e+03_Eschborn2_1
+Using distances [50, 100, 250, 500, 1000] for relative error.
+Processing each configurations...
+  - imu_xsens_imuSamples1.0e+02
+  - imu_xsens_imuSamples5.0e+02
+  - imu_xsens_imuSamples1.0e+03
+< Finish processing Eschborn2 for all configurations.
+<<< ...finish collecting relative error.
+
+--- Generating relative (KITTI style) error plots ---
+Plotting ParkingGarage1...
+Plotting ParkingGarage2...
+Plotting ParkingGarage3...
+Plotting Roedelheim1...
+Plotting Roedelheim2...
+Plotting Eschborn1...
+Plotting Eschborn2...
+<<< .... processing odometry errors done.
+
+>>> Collecting odometry errors per algorithms...
+Distances: [50, 100, 250, 500, 1000]
+>> Error type rel_trans_perc
+>> Error type rel_rot_deg_per_m
+--- Plotting and writing overall odometry errors... ---
+--- Plotting trajectory top and side view ... ---
+Collected trajectories to plot: ['imu_xsens_imuSamples1.0e+02', 'imu_xsens_imuSamples5.0e+02', 'imu_xsens_imuSamples1.0e+03']
+Plotting ParkingGarage1...
+Collected trajectories to plot: ['imu_xsens_imuSamples1.0e+02', 'imu_xsens_imuSamples5.0e+02', 'imu_xsens_imuSamples1.0e+03']
+Plotting ParkingGarage2...
+Collected trajectories to plot: ['imu_xsens_imuSamples1.0e+02', 'imu_xsens_imuSamples5.0e+02', 'imu_xsens_imuSamples1.0e+03']
+Plotting ParkingGarage3...
+Collected trajectories to plot: ['imu_xsens_imuSamples1.0e+02', 'imu_xsens_imuSamples5.0e+02', 'imu_xsens_imuSamples1.0e+03']
+Plotting Roedelheim1...
+Collected trajectories to plot: ['imu_xsens_imuSamples1.0e+02', 'imu_xsens_imuSamples5.0e+02', 'imu_xsens_imuSamples1.0e+03']
+Plotting Roedelheim2...
+Collected trajectories to plot: ['imu_xsens_imuSamples1.0e+02', 'imu_xsens_imuSamples5.0e+02', 'imu_xsens_imuSamples1.0e+03']
+Plotting Eschborn1...
+Collected trajectories to plot: ['imu_xsens_imuSamples1.0e+02', 'imu_xsens_imuSamples5.0e+02', 'imu_xsens_imuSamples1.0e+03']
+Plotting Eschborn2...
+#####################################
+<<< Finished.
+#####################################
