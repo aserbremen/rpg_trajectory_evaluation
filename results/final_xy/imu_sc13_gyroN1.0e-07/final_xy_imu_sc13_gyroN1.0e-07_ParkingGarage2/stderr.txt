@@ -1,0 +1,160 @@
+[2021-06-04 10:30:34.118] [multi_sensor_odometry] [info] Working directory: /home/serov/code/cpp/multi_sensor_odometry
+[2021-06-04 10:30:34.118] [multi_sensor_odometry] [info] Trying to load the parameters from "multi_sensor_odometry.ini" ...
+[2021-06-04 10:30:34.118] [multi_sensor_odometry] [warning] ... Could not find multi_sensor_odometry.ini.
+[2021-06-04 10:30:34.118] [multi_sensor_odometry] [info] No vehicle.ini file specified
+[2021-06-04 10:30:34.118] [multi_sensor_odometry] [info] List of used parameters for the component multi_sensor_odometry:
+[2021-06-04 10:30:34.118] [multi_sensor_odometry] [info]   rpgDir: rpg_trajectory_evaluation/results/final/imu_sc13_gyroN1.0e-07/final_imu_sc13_gyroN1.0e-07_ParkingGarage2
+[2021-06-04 10:30:34.118] [multi_sensor_odometry] [info]   wheelBase: 2.791
+[2021-06-04 10:30:34.118] [multi_sensor_odometry] [info]   rearTrackWidth: 1.568
+[2021-06-04 10:30:34.118] [multi_sensor_odometry] [info]   steeringRatio: 16.25
+[2021-06-04 10:30:34.118] [multi_sensor_odometry] [info]   speedVar: 0.1
+[2021-06-04 10:30:34.118] [multi_sensor_odometry] [info]   steeringAngleVar: 2
+[2021-06-04 10:30:34.118] [multi_sensor_odometry] [info]   useXsens: false
+[2021-06-04 10:30:34.118] [multi_sensor_odometry] [info]   accelerationExtraVar: 0.15
+[2021-06-04 10:30:34.118] [multi_sensor_odometry] [info]   turnRateExtraVar: 0
+[2021-06-04 10:30:34.118] [multi_sensor_odometry] [info]   accelerationBiasInitVar: 1
+[2021-06-04 10:30:34.118] [multi_sensor_odometry] [info]   turnRateBiasInitVar: 1
+[2021-06-04 10:30:34.118] [multi_sensor_odometry] [info]   accelerationBiasRandomWalkOdometry: 0.001
+[2021-06-04 10:30:34.118] [multi_sensor_odometry] [info]   turnRateBiasRandomWalkOdometry: 1e-07
+[2021-06-04 10:30:34.118] [multi_sensor_odometry] [info]   imuAutoCalibrationMinSamples: 5
+[2021-06-04 10:30:34.118] [multi_sensor_odometry] [info]   imuAutoCalibrationMaxSamples: 500
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   accelerationVarAutoEstimation: false
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   turnRateVarAutoEstimation: true
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   useVisualUpdates: false
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   visualUpdateOnlyRotation: true
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   useFilterConsistency: true
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   visualUpdateRotationVar: 0.0001
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   visualUpdateTranslationVar: 0.01
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   maxVisualUpdateTranslationDifference: 0.3
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   maxVisualUpdateRotationDifference: 10
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   maxTimeBetweenVisualUpdatesForReperformingFilterUpdates: 1
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   translationImuToCamX: 1.68493
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   translationImuToCamY: -0.10627
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   translationImuToCamZ: 0.730408
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   quaternionImuToCamW: 0.493341
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   quaternionImuToCamX: -0.494651
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   quaternionImuToCamY: 0.512098
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   quaternionImuToCamZ: -0.499691
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   useCovarianceBounding: false
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   odometryCovarianceRefDist: -1
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   odometryCovarianceRefTime: -1
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   accelerationConstant: 0.5
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   zeroSpeedTime: 0.2
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   steeringAngleUpdateMinSpeed: 1
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   useSteeringAngle: true
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   zeroSpeedYVar: 0.1
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   zeroSpeedZVar: 0.05
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   zeroSpeedThreshold: 0.01
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   speedVarStopFactor: 1
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   speedVarSlowFactor: 1
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   speedSlow: 0.3
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   displayTracking: false
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   displayTrackingDelay: 1
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   maxTrackedFeatures: 750
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   goodFeaturesQualityLevel: 0.01
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   minDistanceToNextFeature: 20
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   useSubPixelAccuracy: false
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   minOptFlowVelocity: 15
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   excludeTrackedFeaturesByFlowVelocity: false
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   confidenceProbability: 0.999
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   maxDistanceToEpipolarLine: 1
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   cameraIntrinsics_fx: 1857.02
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   cameraIntrinsics_fy: 1857.02
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   cameraIntrinsics_cx: 1022.96
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   cameraIntrinsics_cy: 642.81
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   distortionParam_k1: -0.338703
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   distortionParam_k2: 0.272376
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   distortionParam_p1: 0
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   distortionParam_p2: 0
+[2021-06-04 10:30:34.119] [multi_sensor_odometry] [info]   distortionParam_k3: -0.157747
+[2021-06-04 10:30:34.127] [multi_sensor_odometry] [info] useCovarianceBounding false odometryCovarianceRefDist -1 odometryCovarianceRefTime -1
+[2021-06-04 10:30:34.127] [multi_sensor_odometry] [info] dist coeffs: k1 -0.338703  k2 0.272376  p1 0  p2 0  k3 -0.157747
+[2021-06-04 10:30:34.127] [multi_sensor_odometry] [info] camera matrix
+[928.51, 0, 511.23;
+ 0, 928.51, 321.155;
+ 0, 0, 1]
+[2021-06-04 10:30:34.127] [multi_sensor_odometry] [info] Attempting to write rpg files to: rpg_trajectory_evaluation/results/final/imu_sc13_gyroN1.0e-07/final_imu_sc13_gyroN1.0e-07_ParkingGarage2
+[2021-06-04 10:30:34.131] [multi_sensor_odometry] [info] Reading channels in eCAL HDF5 input files...
+[2021-06-04 10:30:34.298] [multi_sensor_odometry] [info] Creating 3715 frames for channel DebugImageExportFC60Pb.
+[2021-06-04 10:30:34.298] [multi_sensor_odometry] [info] 3715 frames were created for channel DebugImageExportFC60Pb
+[2021-06-04 10:30:34.299] [multi_sensor_odometry] [info] Creating 15865 frames for channel VehicleDynamicsInPb.
+[2021-06-04 10:30:34.299] [multi_sensor_odometry] [info] 15865 frames were created for channel VehicleDynamicsInPb
+[2021-06-04 10:30:34.300] [multi_sensor_odometry] [info] Creating 15867 frames for channel RT4000DataInPb.
+[2021-06-04 10:30:34.300] [multi_sensor_odometry] [info] 15867 frames were created for channel RT4000DataInPb
+[2021-06-04 10:30:34.301] [multi_sensor_odometry] [info] Creating 31730 frames for channel VehicleDynamicsImuPb.
+[2021-06-04 10:30:34.303] [multi_sensor_odometry] [info] 31730 frames were created for channel VehicleDynamicsImuPb
+[2021-06-04 10:30:34.304] [multi_sensor_odometry] [info] Creating 31439 frames for channel XsensPb.
+[2021-06-04 10:30:34.304] [multi_sensor_odometry] [info] 31439 frames were created for channel XsensPb
+[2021-06-04 10:30:34.307] [multi_sensor_odometry] [info] 98616 frames were created.
+[2021-06-04 10:30:34.308] [multi_sensor_odometry] [info] starting simulation...
+[2021-06-04 10:30:34.308] [multi_sensor_odometry] [info] input path     : /data/datasets/conti/2021-04-20_Parking_and_atCity/2021-04-20-09-37-33-987_F-TZ_9900_CamLoc_ParkingGarage
+[2021-06-04 10:30:34.308] [multi_sensor_odometry] [info] output path    : 
+[2021-06-04 10:30:34.308] [multi_sensor_odometry] [info] input channels : DebugImageExportFC60Pb VehicleDynamicsInPb RT4000DataInPb VehicleDynamicsImuPb XsensPb 
+[2021-06-04 10:30:34.308] [multi_sensor_odometry] [info] output channels: YaafSimulatorMonitoringStatePb Pose3dPb Kinematics3dPb 
+[2021-06-04 10:30:34.308] [multi_sensor_odometry] [info] filter not initialized, gathering IMU measurements for Xsens false SC13 true
+[2021-06-04 10:30:34.400] [multi_sensor_odometry] [info] filter not initialized, gathering IMU measurements for Xsens false SC13 true
+[2021-06-04 10:30:34.409] [multi_sensor_odometry] [info] Calibrated IMU with 500 samples:
+[2021-06-04 10:30:34.409] [multi_sensor_odometry] [info] acc bias:  0.325376  0.208174 -0.198813 var: (0.15 0.15 0.15)
+[2021-06-04 10:30:34.409] [multi_sensor_odometry] [info] yaw rate bias:   0.0129015 -0.00118048  0.00890054 var: (0.00415153 0.00103783 0.00308493)
+[2021-06-04 10:30:34.508] [multi_sensor_odometry] [info] filter active pos   -0.0115074 -0.000784202  -0.00136226 quat xyz   0.00192905 -0.000308804   0.00223395 w 0.999996
+[2021-06-04 10:30:34.620] [multi_sensor_odometry] [info] filter active pos -0.0105232 0.00251737 -0.0010903 quat xyz   0.00267449 -0.000126987   0.00485748 w 0.999985
+[2021-06-04 10:30:34.731] [multi_sensor_odometry] [info] filter active pos   -0.0101515   0.00342145 -0.000591254 quat xyz    0.0025773 -0.000457812   0.00704487 w 0.999972
+[2021-06-04 10:30:34.836] [multi_sensor_odometry] [info] filter active pos   9.50639 -0.373834 0.0490288 quat xyz  0.00151546 -0.00178529  -0.0602577 w 0.99818
+[2021-06-04 10:30:34.941] [multi_sensor_odometry] [info] filter active pos   18.3301  -6.57292 0.0272679 quat xyz   0.0107558 -0.00224694   -0.643673 w 0.765222
+[2021-06-04 10:30:35.047] [multi_sensor_odometry] [info] filter active pos   11.8702  -13.5349 -0.197046 quat xyz 0.00147894 -0.0104256  -0.996173 w 0.0867686
+[2021-06-04 10:30:35.150] [multi_sensor_odometry] [info] filter active pos   -21.623  -15.4091 -0.780034 quat xyz   0.0101597 -0.00506993   -0.993363 w -0.114459
+[2021-06-04 10:30:35.256] [multi_sensor_odometry] [info] filter active pos -34.1829  10.7182 -1.72634 quat xyz 0.00469998  0.0061824  -0.597025 w -0.802185
+[2021-06-04 10:30:35.360] [multi_sensor_odometry] [info] filter active pos -1.67807  31.8541 -1.51981 quat xyz 0.00625823 0.00440143  -0.190038 w -0.981747
+[2021-06-04 10:30:35.463] [multi_sensor_odometry] [info] filter active pos  57.2523  59.8851 -1.31231 quat xyz 0.00835375 0.00389653  -0.247712 w -0.96879
+[2021-06-04 10:30:35.568] [multi_sensor_odometry] [info] filter active pos   123.968   105.251 -0.553451 quat xyz -0.00437117  0.00363404   -0.336323 w -0.941729
+[2021-06-04 10:30:35.672] [multi_sensor_odometry] [info] filter active pos   187.293    160.74 -0.239169 quat xyz -0.0147331 -0.0037944  -0.345625 w -0.938249
+[2021-06-04 10:30:35.776] [multi_sensor_odometry] [info] filter active pos   191.441   192.319 -0.362331 quat xyz -0.00204637 -0.00755056   -0.938327 w -0.34566
+[2021-06-04 10:30:35.882] [multi_sensor_odometry] [info] filter active pos  168.698  210.188 -1.15995 quat xyz  0.00890641 -0.00752379    -0.73924 w -0.673341
+[2021-06-04 10:30:35.988] [multi_sensor_odometry] [info] filter active pos 173.026 226.095 -1.6687 quat xyz -0.00958979 -0.00331844   -0.613488 w -0.789639
+[2021-06-04 10:30:36.091] [multi_sensor_odometry] [info] filter active pos  173.76 229.327 -1.7537 quat xyz -0.0109339 -0.0025619   -0.61547 w -0.788081
+[2021-06-04 10:30:36.196] [multi_sensor_odometry] [info] filter active pos  176.732  247.904 -1.68263 quat xyz -5.07062e-05  -0.00469173    -0.647038 w -0.762444
+[2021-06-04 10:30:36.303] [multi_sensor_odometry] [info] filter active pos   181.46  270.182 -1.72239 quat xyz -0.00185361  0.00292565   -0.491738 w -0.870736
+[2021-06-04 10:30:36.409] [multi_sensor_odometry] [info] filter active pos  201.555  270.129 -2.63592 quat xyz -0.00722677 -0.00857913    0.121224 w -0.992562
+[2021-06-04 10:30:36.513] [multi_sensor_odometry] [info] filter active pos  218.281  260.035 -3.02647 quat xyz -0.00608165 0.000638016    0.435706 w -0.900068
+[2021-06-04 10:30:36.617] [multi_sensor_odometry] [info] filter active pos  232.351  247.474 -2.27474 quat xyz -0.0136149  0.0380132 -0.0795896 w -0.99601
+[2021-06-04 10:30:36.723] [multi_sensor_odometry] [info] filter active pos   230.974    261.89 -0.454348 quat xyz -0.0304504 0.00242809   -0.99916 w 0.0273297
+[2021-06-04 10:30:36.828] [multi_sensor_odometry] [info] filter active pos   218.305   257.733 -0.252038 quat xyz 0.00654182  -0.013421  -0.999142 w 0.0386389
+[2021-06-04 10:30:36.934] [multi_sensor_odometry] [info] filter active pos   209.063   238.783 -0.181139 quat xyz 0.00698372 -0.0106899  -0.746541 w 0.665217
+[2021-06-04 10:30:37.039] [multi_sensor_odometry] [info] filter active pos   203.883   216.903 -0.255058 quat xyz   0.0098024 -0.00676806   -0.906788 w 0.421418
+[2021-06-04 10:30:37.145] [multi_sensor_odometry] [info] filter active pos   188.553   219.415 -0.591605 quat xyz 0.000449749 -0.00918464   -0.773112 w -0.634203
+[2021-06-04 10:30:37.249] [multi_sensor_odometry] [info] filter active pos   191.398   244.276 -0.936029 quat xyz -0.00854138  -0.0102184   -0.653839 w -0.756516
+[2021-06-04 10:30:37.353] [multi_sensor_odometry] [info] filter active pos  195.896  270.465 -1.15226 quat xyz -0.0104686 -0.0134911  -0.636224 w -0.771315
+[2021-06-04 10:30:37.458] [multi_sensor_odometry] [info] filter active pos  185.249  284.299 -1.07126 quat xyz 0.00707146 -0.0127387  -0.991358 w 0.130374
+[2021-06-04 10:30:37.564] [multi_sensor_odometry] [info] filter active pos  176.593  262.274 -1.18861 quat xyz  0.00900135 -0.00742755   -0.756756 w 0.653594
+[2021-06-04 10:30:37.668] [multi_sensor_odometry] [info] filter active pos  172.702  234.861 -1.19618 quat xyz   0.0130772 -0.00755314   -0.732727 w 0.680355
+[2021-06-04 10:30:37.772] [multi_sensor_odometry] [info] filter active pos  163.034  218.193 -1.44258 quat xyz  0.00819689 -0.00466759   -0.998981 w 0.0441318
+[2021-06-04 10:30:37.877] [multi_sensor_odometry] [info] filter active pos  154.787  235.873 -1.77006 quat xyz -0.00556542  -0.0126995   -0.659286 w -0.751765
+[2021-06-04 10:30:37.983] [multi_sensor_odometry] [info] filter active pos  158.693  267.899 -1.97071 quat xyz  -0.0091507 -0.00906211   -0.661805 w -0.749565
+[2021-06-04 10:30:38.088] [multi_sensor_odometry] [info] filter active pos 162.013 296.398 -2.1726 quat xyz  -0.0113201 -0.00953493   -0.670016 w -0.742199
+[2021-06-04 10:30:38.194] [multi_sensor_odometry] [info] filter active pos  170.513   310.52 -3.07401 quat xyz  0.0208354 -0.0243871  -0.576037 w -0.816794
+[2021-06-04 10:30:38.300] [multi_sensor_odometry] [info] filter active pos 157.005 313.867 -4.4002 quat xyz 0.0222927 0.0339308 -0.750074 w 0.660107
+[2021-06-04 10:30:38.404] [multi_sensor_odometry] [info] filter active pos  162.053  293.055 -5.21852 quat xyz  0.00383611 5.77352e-05    -0.75666 w 0.653798
+[2021-06-04 10:30:38.508] [multi_sensor_odometry] [info] filter active pos  158.495  264.416 -5.34679 quat xyz   0.00335048 -0.000881425    -0.742102 w 0.670278
+[2021-06-04 10:30:38.616] [multi_sensor_odometry] [info] filter active pos  151.922  255.401 -5.43277 quat xyz -0.000998766   -0.0123613    -0.976227 w 0.216395
+[2021-06-04 10:30:38.724] [multi_sensor_odometry] [info] filter active pos  142.708  240.609 -5.42952 quat xyz -0.00227642   0.0017332   -0.743453 w 0.668782
+[2021-06-04 10:30:38.828] [multi_sensor_odometry] [info] filter active pos  140.366  214.915 -5.69089 quat xyz -0.00460521  0.00327928   -0.732818 w 0.680401
+[2021-06-04 10:30:38.935] [multi_sensor_odometry] [info] filter active pos  140.051  209.114 -5.75199 quat xyz -0.0056826 0.00571717  -0.714256 w 0.699838
+[2021-06-04 10:30:39.041] [multi_sensor_odometry] [info] filter active pos  146.565  196.423 -5.65198 quat xyz 0.000654951  -0.0130327   -0.258812 w 0.96584
+[2021-06-04 10:30:39.147] [multi_sensor_odometry] [info] filter active pos  175.487  188.849 -4.95713 quat xyz  0.0254479 -0.0191442  -0.228601 w 0.972999
+[2021-06-04 10:30:39.254] [multi_sensor_odometry] [info] filter active pos  177.798  187.538 -4.93672 quat xyz  0.0290641 -0.0193496  -0.277202 w 0.960177
+[2021-06-04 10:30:39.364] [multi_sensor_odometry] [info] filter active pos  177.799  187.545 -4.95123 quat xyz   0.028366 -0.0207648  -0.276524 w 0.960364
+[2021-06-04 10:30:39.471] [multi_sensor_odometry] [info] filter active pos  186.426  173.088 -4.90229 quat xyz 0.00804846 -0.0199374  -0.665304 w 0.746263
+[2021-06-04 10:30:39.576] [multi_sensor_odometry] [info] filter active pos  166.542   135.96 -5.56547 quat xyz 0.0123413 -0.018416 -0.865353 w 0.500673
+[2021-06-04 10:30:39.683] [multi_sensor_odometry] [info] filter active pos  128.834  82.0385 -6.21849 quat xyz  0.0121528 -0.0143236  -0.907184 w 0.420316
+[2021-06-04 10:30:39.790] [multi_sensor_odometry] [info] filter active pos   84.531  37.7716 -7.01194 quat xyz  0.0133688 -0.0186961  -0.939316 w 0.342282
+[2021-06-04 10:30:39.898] [multi_sensor_odometry] [info] filter active pos  47.3457  6.34035 -7.62043 quat xyz 0.00805119 -0.0310475  -0.952297 w 0.303481
+[2021-06-04 10:30:40.004] [multi_sensor_odometry] [info] filter active pos  17.6049 -11.6746 -8.22955 quat xyz  0.0209503 -0.0377154  -0.972018 w 0.23091
+[2021-06-04 10:30:40.112] [multi_sensor_odometry] [info] filter active pos  1.95756 -34.9376 -8.30235 quat xyz   0.012872 -0.0144313  -0.593163 w 0.80485
+[2021-06-04 10:30:40.218] [multi_sensor_odometry] [info] filter active pos  11.3284 -59.1065 -7.89209 quat xyz  0.0186729 -0.0302932  -0.520423 w 0.853167
+[2021-06-04 10:30:40.326] [multi_sensor_odometry] [info] filter active pos  39.1404  -60.411 -7.28271 quat xyz   0.0154653 -0.00948887    0.193743 w 0.980885
+[2021-06-04 10:30:40.434] [multi_sensor_odometry] [info] filter active pos  69.6375 -47.6816 -6.67382 quat xyz   0.012805 0.00604103   0.273788 w 0.961686
+[2021-06-04 10:30:40.542] [multi_sensor_odometry] [info] filter active pos  69.5226  -29.322 -6.17632 quat xyz -0.00225861  -0.0056031    0.990888 w 0.134553
+[2021-06-04 10:30:40.651] [multi_sensor_odometry] [info] filter active pos  49.7381 -35.9118 -7.03783 quat xyz -0.00133439 -0.00693275    0.999962 w -0.00520961
+[2021-06-04 10:30:40.758] [multi_sensor_odometry] [info] filter active pos  34.7376 -39.2201 -6.97083 quat xyz  -0.0154709 -0.00187597    0.726038 w -0.687478
+[2021-06-04 10:30:40.867] [multi_sensor_odometry] [info] filter active pos  46.9706 -40.3267 -7.47943 quat xyz  -0.0172845 0.000758484   -0.351521 w -0.93602
+[2021-06-04 10:30:40.975] [multi_sensor_odometry] [info] filter active pos  55.5733 -34.9188 -7.39063 quat xyz   -0.0228722 -0.000787766    -0.193676 w -0.980798
