@@ -1,0 +1,35 @@
+Datasets:
+  ParkingGarage1:
+    label: ParkingGarage1
+  ParkingGarage2:
+    label: ParkingGarage2
+  ParkingGarage3:
+    label: ParkingGarage3
+  Roedelheim1:
+    label: Roedelheim1
+  Roedelheim2:
+    label: Roedelheim2
+  Eschborn1:
+    label: Eschborn1
+  Eschborn2:
+    label: Eschborn2
+Algorithms:
+  imu_xsens:
+    fn: traj_est
+    label: imu xsens
+  rot_xsens:
+    fn: traj_est
+    label: rot xsens
+  pose_xsens:
+    fn: traj_est
+    label: pose xsens
+  imu_xsens_covBounding:
+    fn: traj_est
+    label: imu xsens covBounding
+  rot_xsens_covBounding:
+    fn: traj_est
+    label: rot xsens covBounding
+  pose_xsens_covBounding:
+    fn: traj_est
+    label: pose xsens covBounding
+RelDistances: [50, 100, 250, 500, 1000]
