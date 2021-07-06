@@ -1,0 +1,38 @@
+Datasets:
+  ParkingGarage1:
+    label: ParkingGarage1
+  ParkingGarage2:
+    label: ParkingGarage2
+  ParkingGarage3:
+    label: ParkingGarage3
+  Roedelheim1:
+    label: Roedelheim1
+  Roedelheim2:
+    label: Roedelheim2
+  Eschborn1:
+    label: Eschborn1
+  Eschborn2:
+    label: Eschborn2
+Algorithms:
+  maxPoseDiffSmallest:
+    fn: traj_est
+    label: maxPoseDiffSmallest
+  maxPoseDiffSmaller:
+    fn: traj_est
+    label: maxPoseDiffSmaller
+  maxPoseDiffSmall:
+    fn: traj_est
+    label: maxPoseDiffSmall
+  maxPoseDiffDefault:
+    fn: traj_est
+    label: maxPoseDiffDefault
+  maxPoseDiffBig:
+    fn: traj_est
+    label: maxPoseDiffBig
+  maxPoseDiffBigger:
+    fn: traj_est
+    label: maxPoseDiffBigger
+  maxPoseDiffBiggest:
+    fn: traj_est
+    label: maxPoseDiffBiggest
+RelDistances: [50, 100, 250, 500, 1000]
