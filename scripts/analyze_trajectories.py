@@ -117,6 +117,19 @@ def plot_odometry_error_per_dataset(dataset_rel_err, dataset_names, algorithm_na
                     '_trans_rot_error'+FORMAT, bbox_inches="tight", dpi=args.dpi)
         plt.close(fig)
 
+        # additional figure only plotting the relative translational error
+        fig = plt.figure(figsize=(8, 4))
+        ax = fig.add_subplot(
+            111, xlabel='Subtrajectory length (m)',
+            ylabel='Translation error (\%)')
+        pu.boxplot_compare(ax, distances, [rel_err['trans_err_perc'][v] for v in algorithm_names],
+                           config_labels, config_colors, legend=True)
+        fig.tight_layout()
+        fig.savefig(output_dir+'/'+dataset_nm +
+                    '_trans_error'+FORMAT, bbox_inches="tight", dpi=args.dpi)
+        plt.close(fig)
+        
+
 
 def collect_rmse_per_dataset(config_multierror_list,
                              algorithms):
