@@ -273,7 +273,7 @@ if __name__ == '__main__':
 
         fig = plt.figure(figsize=(6, 2.5))
         ax = fig.add_subplot(
-            111, xlabel='Distance traveled [m]',
+            111, xlabel='Subtrajectory length [m]',
             ylabel='Translation error [m]')
         pu.boxplot_compare(ax, distances, rel_errors['rel_trans'],
                            labels, colors)
@@ -284,7 +284,7 @@ if __name__ == '__main__':
 
         fig = plt.figure(figsize=(6, 2.5))
         ax = fig.add_subplot(
-            111, xlabel='Distance traveled [m]',
+            111, xlabel='Subtrajectory length [m]',
             ylabel='Translation error [\%]')
         pu.boxplot_compare(
             ax, distances, rel_errors['rel_trans_perc'], labels, colors)
@@ -295,7 +295,7 @@ if __name__ == '__main__':
 
         fig = plt.figure(figsize=(6, 2.5))
         ax = fig.add_subplot(
-            111, xlabel='Distance traveled [m]',
+            111, xlabel='Subtrajectory length [m]',
             ylabel='Yaw error [deg]')
         pu.boxplot_compare(ax, distances, rel_errors['rel_yaw'],
                            labels, colors)
