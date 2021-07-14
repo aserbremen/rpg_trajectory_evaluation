@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 from matplotlib import rc
 import matplotlib
 from colorama import init, Fore
+from numpy.core.fromnumeric import shape
 
 import add_path
 from trajectory import Trajectory
@@ -283,7 +284,7 @@ if __name__ == '__main__':
                     bbox_inches="tight", dpi=args.dpi)
         plt.close(fig)
 
-        fig = plt.figure(figsize=(6, 2.5))
+        fig = plt.figure(figsize=(8, 2.5))
         ax = fig.add_subplot(
             111, xlabel='Subtrajectory length [m]',
             ylabel='Translation error [\%]')
@@ -302,6 +303,15 @@ if __name__ == '__main__':
                            labels, colors)
         fig.tight_layout()
         fig.savefig(plot_dir_i+'/rel_yaw_error' + suffix + FORMAT,
+                    bbox_inches="tight", dpi=args.dpi)
+        plt.close(fig)
+
+        # x - time, y height plot
+        fig = plt.figure(figsize=(6, 2.5))
+        ax = fig.add_subplot(111, xlabel='Time [s]', ylabel='z [m]')
+        pu.plot_time_and_z(ax, plot_traj, labels=["Estimate", "GT"], colors=['b', 'm'])
+        fig.tight_layout()
+        fig.savefig(plot_dir_i+'/time_and_z'+suffix+FORMAT,
                     bbox_inches="tight", dpi=args.dpi)
         plt.close(fig)
 

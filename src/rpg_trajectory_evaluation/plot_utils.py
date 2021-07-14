@@ -102,3 +102,19 @@ def plot_error_n_dim(ax, distances, errors, results_dir,
     for i in range(len(colors)):
         ax.plot(distances, errors[:, i],
                 colors[i]+'-', label=labels[i])
+
+def plot_time_and_z(ax, plot_traj, labels, colors):
+    start_time_es = plot_traj.t_es[0]
+    start_time_gt = plot_traj.t_gt[0]
+    ax.plot((plot_traj.t_es-start_time_es), plot_traj.p_es[:,2], color=colors[0])
+    ax.plot((plot_traj.t_gt-start_time_gt), plot_traj.p_gt[:,2], color=colors[1])
+    leg_labels = []
+    leg_handles = []
+    # manually add color to handle
+    leg_handles.append(mlines.Line2D([], [], color=colors[0]))  
+    leg_handles.append(mlines.Line2D([], [], color=colors[1]))  
+    leg_labels.append(labels[0])
+    leg_labels.append(labels[1])
+    ax.legend(leg_handles, leg_labels)
+    map(lambda x: x.set_visible(False), leg_handles)
+
